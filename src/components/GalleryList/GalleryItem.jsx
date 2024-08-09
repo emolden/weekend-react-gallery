@@ -2,25 +2,18 @@
 import './GalleryList.css';
 
 
-function GalleryItem () {
+function GalleryItem ({img, fetchImages}) {
 
     return (
-        <div data-testid="galleryItem">
-            <span>
-                <h3>Small Goat</h3>
-                <img className="image" src="images/goat_small.jpg"/>
-                <button data-testid="toggle">description/image</button>
-                <button data-testid="like">like</button>
-            </span>
-            <span className= "singleItem">
-                <h3>Stache Goat</h3>
-                <img className="image" src="images/goat_stache.png"/>
+            <li className= "singleItem" data-testid="galleryItem">
+                <h3>{img.title}</h3>
+                <img className="image" src={img.url}/>
+                <p>{img.description}</p>
                 <span className="buttons">
-                    <button data-testid="toggle"> description/image</button>
-                    <button data-testid="like">like</button>
+                    <button data-testid="toggle">description/image</button>
+                    <button data-testid="like">{img.likes} like</button>
                 </span>
-            </span>
-        </div>
+            </li>
     )
 }
 
