@@ -1,0 +1,11 @@
+.image {
+    height: 100px;
+    width: 100px;
+}
+
+.singleItem {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
