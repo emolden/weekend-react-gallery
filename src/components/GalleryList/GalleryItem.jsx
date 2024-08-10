@@ -1,8 +1,23 @@
 
 import './GalleryList.css';
+import axios from 'axios';
 
 
 function GalleryItem ({img, fetchImages}) {
+
+    const addLike = () => {
+        console.log('in addLike function');
+        axios({
+            method: 'PUT',
+            url: `/api/gallery/like/${img.id}`
+        })
+        .then((response) => {
+            fetchImages();
+        })
+        .catch((error) => {
+            console.log('Error in the response from the server PUT route: ', error);
+        })
+    }
 
     return (
             <li className= "singleItem" data-testid="galleryItem">
@@ -11,7 +26,7 @@ function GalleryItem ({img, fetchImages}) {
                 <p>{img.description}</p>
                 <span className="buttons">
                     <button data-testid="toggle">description/image</button>
-                    <button data-testid="like">{img.likes} like</button>
+                    <button data-testid="like" onClick={addLike}>{img.likes} Likes</button>
                 </span>
             </li>
     )
