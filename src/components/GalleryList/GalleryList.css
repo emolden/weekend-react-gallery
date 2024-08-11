@@ -1,4 +1,6 @@
-
+body {
+    background-color: rgb(227, 203, 203);
+}
 
 .image {
     background-color: white;
@@ -21,7 +23,9 @@
 
 .singleItem {
     background-color: rgb(247, 231, 190);
-    border: solid black;
+    border: solid rgba(66, 66, 106, 0.993);
+    border-width: 2px;
+    border-radius: 20px;
     margin: 10px;
     height: 350px;
     width: 350px;
@@ -41,10 +45,7 @@
 .galleryListOfItems {
     margin: 20px;
     padding: 30px;
-    border: solid black;
     text-align: center;
-
-    background-color: rgb(227, 203, 203);
     display: flex;
     flex-wrap: wrap;
     /* align-items: flex-start; */
@@ -61,12 +62,15 @@ h3 {
     flex-direction: column;
     padding-left: 40px;
     padding-right: 40px;
+    
 }
 
 .imageDescriptionButton {
     margin-top: 10px;
     margin-bottom: 10px;
     background-color: rgb(190, 122, 190);
+    font-size: 18px;
+    border-radius: 8px;
 }
 .imageDescriptionButton:hover {
     background-color: rgb(150, 62, 150);
@@ -74,6 +78,7 @@ h3 {
 
 .likeButton {
     background-color: rgb(190, 122, 190);
+    font-size: 18px;
 }
 
 .likeButton:hover {

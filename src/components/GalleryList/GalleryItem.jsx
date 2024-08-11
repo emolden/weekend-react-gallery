@@ -50,7 +50,7 @@ function GalleryItem ({img, fetchImages}) {
                 </div>
                 <div className="buttons">
                     <button className="imageDescriptionButton" data-testid="toggle" onClick={changeImageDescription}>{imageDescriptionButton}</button>
-                    <button className="likeButton" data-testid="like" onClick={addLike}>{Number(img.likes) == 1 ? `♥ 1 Like` : `♥ ${img.likes} Likes`}</button>
+                    <button className="likeButton" data-testid="like" onClick={addLike}>{Number(img.likes) == 1 ? `♥   1 Like` : `♥   ${img.likes} Likes`}</button>
                 </div>
             </li>
     )
