@@ -6,7 +6,7 @@ function GalleryList ({images, fetchImages}) {
     return (
         <div data-testid="galleryList">
             <h1>Gallery List</h1>
-            <ul>
+            <ul className="galleryListOfItems">
                 {images.map((img) => {
                     return (
                         <GalleryItem key={img.id} img={img} fetchImages={fetchImages}/>
