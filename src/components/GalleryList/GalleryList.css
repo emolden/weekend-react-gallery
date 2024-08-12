@@ -5,7 +5,7 @@ body {
 .image {
     background-color: white;
     padding: 20px;
-    border: solid rgba(66, 66, 106, 0.993);
+    border: solid rgba(31, 42, 63, 0.993);
     border-width: 5px;
     height: 150px;
     width: 150px;
@@ -14,7 +14,7 @@ body {
 .description {
     background-color: white;
     padding: 20px;
-    border: solid rgba(66, 66, 106, 0.993);
+    border: solid rgba(31, 42, 63, 0.993);
     border-width: 5px;
     height: 150px;
     width: 150px;
@@ -23,7 +23,7 @@ body {
 
 .singleItem {
     background-color: rgb(247, 231, 190);
-    border: solid rgba(66, 66, 106, 0.993);
+    border: solid rgba(31, 42, 63, 0.993);
     border-width: 2px;
     border-radius: 20px;
     margin: 10px;
@@ -34,6 +34,7 @@ body {
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 
 }
 
@@ -79,6 +80,7 @@ h3 {
 .likeButton {
     background-color: rgb(190, 122, 190);
     font-size: 18px;
+    border-radius: 8px;
 }
 
 .likeButton:hover {

@@ -34,10 +34,12 @@ function App() {
     return (
       <div data-testid="app">
         <header>
+          
           <h1 id="pageTitle">React Gallery</h1>
-          <h3>Featuring: Norra</h3>
+          <h3 id = "subTitle">Featuring: Norra</h3>
         </header>
         <GalleryList images={images} fetchImages={fetchImages} />
+        <footer>Checkout my other projects on Github: </footer>
       </div>
     );
 }

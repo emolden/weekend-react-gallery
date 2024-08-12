@@ -9,7 +9,6 @@ function GalleryItem ({img, fetchImages}) {
     const [imageDescription, setImageDescription] = useState('Image');
     const [imageDescriptionDisplay, setImageDescriptionDisplay] = useState(<img className="image" src={img.url}/>);
     const [imageDescriptionButton, setImageDescriptionButton] = useState('Description')
-    const [likeButtonText, setLikeButtonText] = useState('')
 
     
 
