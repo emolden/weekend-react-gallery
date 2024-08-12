@@ -9,7 +9,6 @@ function GalleryItem ({img, fetchImages}) {
     const [imageDescription, setImageDescription] = useState('Image');
     const [imageDescriptionDisplay, setImageDescriptionDisplay] = useState(<img className="image" src={img.url}/>);
     const [imageDescriptionButton, setImageDescriptionButton] = useState('Description')
-    const [likeButtonText, setLikeButtonText] = useState('')
 
     
 
@@ -50,7 +49,7 @@ function GalleryItem ({img, fetchImages}) {
                 </div>
                 <div className="buttons">
                     <button className="imageDescriptionButton" data-testid="toggle" onClick={changeImageDescription}>{imageDescriptionButton}</button>
-                    <button className="likeButton" data-testid="like" onClick={addLike}>{Number(img.likes) == 1 ? `♥ 1 Like` : `♥ ${img.likes} Likes`}</button>
+                    <button className="likeButton" data-testid="like" onClick={addLike}>{Number(img.likes) == 1 ? `♥   1 Like` : `♥   ${img.likes} Likes`}</button>
                 </div>
             </li>
     )
